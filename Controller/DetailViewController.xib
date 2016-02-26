@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="backView" destination="cet-vw-Xeh" id="KBh-8o-l6v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-oW-RM1">
+                    <rect key="frame" x="300" y="550" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Upv-BQ-Wre"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="collectcontent.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressBtn:" destination="-1" eventType="touchUpInside" id="YqB-mr-AeJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwD-lN-SVv">
+                    <rect key="frame" x="0.0" y="550" width="300" height="50"/>
+                    <state key="normal" backgroundImage="contentback.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressBtn:" destination="-1" eventType="touchUpInside" id="edp-Oy-X2R"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cet-vw-Xeh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fgf-oW-RM1" secondAttribute="trailing" id="3Dg-D2-MYE"/>
+                <constraint firstItem="bwD-lN-SVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4ay-H0-SYP"/>
+                <constraint firstAttribute="trailing" secondItem="cet-vw-Xeh" secondAttribute="trailing" id="8Bw-gn-duC"/>
+                <constraint firstItem="cet-vw-Xeh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QYp-MJ-g6e"/>
+                <constraint firstAttribute="bottom" secondItem="bwD-lN-SVv" secondAttribute="bottom" id="Vko-GM-yQK"/>
+                <constraint firstItem="bwD-lN-SVv" firstAttribute="width" secondItem="fgf-oW-RM1" secondAttribute="width" id="hlm-Ao-4Ea"/>
+                <constraint firstItem="bwD-lN-SVv" firstAttribute="top" secondItem="cet-vw-Xeh" secondAttribute="bottom" id="lMe-52-M0m"/>
+                <constraint firstItem="fgf-oW-RM1" firstAttribute="leading" secondItem="bwD-lN-SVv" secondAttribute="trailing" id="mFg-H0-gu2"/>
+                <constraint firstItem="cet-vw-Xeh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mY6-iY-OVc"/>
+                <constraint firstAttribute="bottom" secondItem="cet-vw-Xeh" secondAttribute="bottom" constant="50" id="pF5-86-od5"/>
+                <constraint firstAttribute="bottom" secondItem="fgf-oW-RM1" secondAttribute="bottom" id="zOu-mk-nhO"/>
+            </constraints>
+            <point key="canvasLocation" x="55" y="-82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collectcontent.png" width="214" height="89"/>
+        <image name="contentback.png" width="213" height="89"/>
+    </resources>
+</document>
